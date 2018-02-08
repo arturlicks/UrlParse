@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+{% block conteudo %}
+    <form action="/result" method="post">
+        <fieldset>
+          <div class="form-group">
+            <label for="urlin">URL Input</label>
+            <input type="text" id="urlin" name="urlin" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary btn-salvar">Parse</button>
+        </fieldset>
+    </form>
+{% endblock %}
